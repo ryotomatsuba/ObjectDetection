@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/usr/bin/python3",
+    "docker.host":"ssh://ryoto.matsuba@133.11.80.37:8016",
+}

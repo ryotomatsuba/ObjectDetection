@@ -1,0 +1,39 @@
+# MLflow configs
+experiment:
+  name: wood
+
+# Data configs
+data:
+  dataset: 
+    name: wood
+    rootdir: /workspace/datasets
+    classes: ["window"]
+    num_class: 1
+    num_train_samples: 40000
+    in_channel: 3
+  sampler:
+    name: balanced_batch_sampler
+
+# Training configs
+train:
+  trainer:
+    name: default
+  batch_size: 10
+  epochs: 3
+  optimizer:
+    name: adam
+    lr: 0.0001
+    decay: 0.0001
+  criterion:
+    name: cross_entropy
+  metric:
+    name: classification
+  save_best_ckpt: True
+  num_workers: 2
+  ckpt_path: best_ckpt.pth
+
+# Model configs
+model:
+  name: simple_cnn
+  pretrained: False
+  initial_ckpt: 

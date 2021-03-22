@@ -1,0 +1,8 @@
+{
+    "name": "Python Project",
+    "dockerFile": "../docker/Dockerfile",
+    "extensions": [
+        "ms-python.python"
+    ],
+    "workspaceMount": "source=/home/ryoto.matsuba/ObjectDetection,target=/workspace,type=bind,consistency=cached"
+}
